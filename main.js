@@ -11,11 +11,12 @@ class User {
 }
 
 const user1 = new User("Marco", "Rossi", 30, "bologna");
-const user2 = new User("Silvio", "Bianchi", 60, "milano");
+const user2 = new User("Silvio", "Bianchi", 29, "milano");
 
 console.log(User.checkAgeGap(user1, user2));
 
-//pet exercise
+/////////////////////////////////////////////////////////////pet exercise
+const petList = [];
 
 class Pet {
   constructor(_petName, _ownerName, _species, _breed) {
@@ -52,4 +53,12 @@ myForm.addEventListener("submit", (e) => {
 
   let currentPet = new Pet(...inputValues);
   listIt(currentPet);
+  petList.push(currentPet);
 });
+
+function ctrlOwner() {
+  console.log(Pet.checkOwner(petList[0], petList[1]));
+}
+
+const checkBtn = document.getElementById("checkBtn");
+checkBtn.addEventListener("click", ctrlOwner);
