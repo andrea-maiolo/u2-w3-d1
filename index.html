@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 50%;
+        }
+
+        #myForm {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <title>OOP</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="myForm">
+            <label for="petName">Pet Name:</label>
+            <input type="text" id="petName" name="petName" required>
+
+            <label for="ownerName">Owner Name:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+
+            <label for="species">Species:</label>
+            <input type="text" id="species" name="species" required>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
